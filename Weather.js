@@ -21,7 +21,6 @@ rl.question('Input city: ', (answer) => {
     res.on('end', () => {
       const parsedData = JSON.parse(data);
       console.log(+(parsedData.main.temp)-273.15);
-      console.log(res.statusCode);
       rl.close();
     });
   });
